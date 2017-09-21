@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
           <h2>Welcome to React</h2>
-          <Title content='This is a website.'/>
+          <Title content='String Content' />
       </div>
     );
   }
