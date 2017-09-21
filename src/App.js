@@ -25,7 +25,14 @@ const recipes = [
     vegan: false,
     vegetarian: false,
     pescatarian: false,
-  }
+  },
+  {
+    title: 'Agedashi Tofu',
+    summary: 'Agedashi Tofu is one of those magical dishes where a few simple ingredients come together in a harmonizing synergy that elevates the dish from humble to divine. It is made with blocks of soft tofu that are coated in a thin layer of potato starch before being lightly fried.',
+    vegan: true,
+    vegetarian: true,
+    pescatarian: false,
+  },
 ]
 
 class App extends Component {
