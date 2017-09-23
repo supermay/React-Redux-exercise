@@ -2,6 +2,9 @@ import React, { PureComponent } from 'react';
 import Title from './Title';
 import RecipeItem from './RecipeItem';
 
+// connect to the store's state
+import { connect } from 'react-redux';
+
 class RecipesContainer extends PureComponent {
   renderRecipes = (recipe, index) => {
     console.log(`${index+1}`);
@@ -25,4 +28,9 @@ class RecipesContainer extends PureComponent {
   }
 }
 
-export default RecipesContainer;
+
+const mapStateToProps = ({ recipes }) => ({
+  recipes
+})
+
+export default connect(mapStateToProps)(RecipesContainer);
